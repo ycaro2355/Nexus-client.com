@@ -2,117 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Client | Official</title>
+    <title>NEXUS CLIENT | OFFICIAL</title>
     <style>
-        body {
-            background-color: #0b0b12;
-            color: #ffffff;
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            overflow: hidden;
-        }
+        body { background: #000000; color: #ffffff; font-family: 'Segoe UI', sans-serif; margin: 0; text-align: center; }
+        .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px; }
+        .card { background: #000000; padding: 40px; border-radius: 30px; border: 1px solid #1a1a1a; width: 360px; box-shadow: 0 0 40px rgba(255, 255, 255, 0.05); }
+        
+        .logo-box { width: 100%; height: 180px; background: #000; border-radius: 20px; margin-bottom: 25px; display: flex; align-items: center; justify-content: center; border: 1px solid #ffffff; }
+        .logo-n { font-size: 110px; font-weight: 900; color: #fff; text-shadow: 0 0 15px rgba(255,255,255,0.3); }
 
-        /* Fundo com efeito de luz sutil */
-        body::before {
-            content: '';
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            background: rgba(100, 100, 255, 0.05);
-            border-radius: 50%;
-            filter: blur(100px);
-            z-index: 0;
-        }
-
-        .container {
-            background: rgba(15, 15, 25, 0.8);
-            padding: 50px;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            text-align: center;
-            width: 380px;
-            z-index: 1;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 5px;
-            letter-spacing: 5px;
-            color: #ffffff;
-            font-weight: 800;
-        }
-
-        .subtitle {
-            color: #888;
-            font-size: 0.9rem;
-            margin-bottom: 40px;
+        h2 { color: #ffffff; letter-spacing: 6px; font-size: 22px; margin-bottom: 35px; font-weight: 300; text-transform: uppercase; }
+        
+        /* BOTÃO DO SETUP QUE FAZ TUDO */
+        .btn { 
+            background: #ffffff; 
+            color: #000000; 
+            text-decoration: none; 
+            padding: 22px; 
+            border-radius: 12px; 
+            display: block; 
+            font-weight: 900; 
+            font-size: 16px; 
+            transition: 0.3s; 
             text-transform: uppercase;
             letter-spacing: 2px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.1);
         }
+        .btn:hover { background: #e0e0e0; transform: scale(1.03); }
+        .btn:active { transform: translateY(4px); }
 
-        .btn {
-            display: block;
-            width: 100%;
-            padding: 18px;
-            margin: 15px 0;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            box-sizing: border-box;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* Botão PC (Igual Delta) */
-        .btn-pc {
-            background-color: #ffffff;
-            color: #000000;
-            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
-        }
-
-        /* Botão APK (Igual Delta) */
-        .btn-apk {
-            background-color: #1a1a2e;
-            color: #ffffff;
-            border: 1px solid #333;
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            opacity: 0.9;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-        }
-
-        .footer {
-            margin-top: 30px;
-            font-size: 0.75rem;
-            color: #444;
-            letter-spacing: 1px;
-        }
+        .specs { background: #000; padding: 50px 20px; border-top: 1px solid #111; width: 100%; }
+        .white-text { color: #ffffff; font-weight: bold; font-size: 12px; opacity: 0.4; letter-spacing: 3px; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>NEXUS</h1>
-        <p class="subtitle">Next Generation Execution</p>
+    <div class="hero">
+        <div class="card">
+            <div class="logo-box">
+                <span class="logo-n">N</span>
+            </div>
+            
+            <h2>Nexus client</h2>
+            
+            <a href="https://setup.rbxcdn.com/RobloxPlayerLauncher.exe" class="btn">Download Client</a>
 
-        <a href="Roblox_Installer.zip" class="btn btn-pc">DOWNLOAD FOR PC</a>
-
-        <a href="Roblox.apk" class="btn btn-apk">DOWNLOAD FOR ANDROID</a>
-
-        <div class="footer">
-            Nexus Corp © 2026 | All Rights Reserved
         </div>
+    </div>
+
+    <div class="specs">
+        <span class="white-text">STABLE VERSION 2026</span>
     </div>
 
 </body>
